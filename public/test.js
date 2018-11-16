@@ -46,6 +46,7 @@ document.querySelector("#updateTask").addEventListener('submit', function (e) {
         .catch(error => console.error('Error:', error))
         .then(function (response) {
             console.log({ "Success": response.message });
+            //aquí habia algo
             tasks();
         });
 });
